@@ -1,15 +1,12 @@
 {
-  "name": "social-crows",
+  "name": "findmypeoples",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A platform to find and suggest community groups.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.17.1"
   }
 }

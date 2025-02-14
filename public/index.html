@@ -3,10 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FindMyPeoples</title>
+  <title>Kinnly - Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to FindMyPeoples!</h1>
-  <p>This is a platform to find and suggest community groups.</p>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <img src="logo.png" alt="Kinnly Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#explore">Explore</a></li>
+          <li><a href="#suggest">Suggest a Group</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Kinnly - Find Your People</h1>
+    <p>Welcome to Kinnly! Discover and join community groups based on your interests and neighborhood.</p>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <h2>About FindMyPeoples</h2>
+    <p>Kinnly is a platform to find and suggest community groups. Our mission is to connect people with like-minded individuals in their local communities.</p>
+    <p>Send us an email here: </p>
+  </section>
+  
+
+  <!-- Suggest a Group Section -->
+  <section id="suggest">
+    <h2>Suggest a Group</h2>
+    <form action="submit_suggestion.php" method="post">
+      <label for="group-name">Group Name:</label><br>
+      <input type="text" id="group-name" name="group-name" required><br><br>
+      <label for="location">Location:</label><br>
+      <input type="text" id="location" name="location" required><br><br>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Group Segments Section -->
+  <section id="explore">
+    <h2>Use the links below to find the group you are looking for:</h2>
+    <ul>
+      <li><a href="#sports">Sports</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#communityorganizations">Community Organizations</a></li>
+      <!-- Add other group segments here -->
+    </ul>
+  </section>
+
+  <section id="sports">
+    <h1>Sports</h1>
+    <p>Sports groups here</p>
+  </section>
+
+  <section id="books">
+    <h1>Books</h1>
+    <p>Book groups here</p>
+  </section>
+
+  <section id="communityorganizations">
+    <h1>Community Organizations</h1>
+    <p>Community organizations here</p>
+  </section>
+
+  <script>
+    function filterGroups() {
+      const neighborhood = document.getElementById('neighborhood').value;
+      const activity = document.getElementById('activity').value;
+      // Implement filtering logic here
+    }
+  </script>
 </body>
 </html>
